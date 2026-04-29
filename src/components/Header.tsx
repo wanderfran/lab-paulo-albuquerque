@@ -22,6 +22,7 @@ export default function Header() {
 
   return (
     <>
+      <div className="sticky top-0 z-50">
       {/* Top Bar - Navy */}
       <div className="bg-navy-900 text-white text-xs sm:text-sm">
         <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
@@ -65,7 +66,7 @@ export default function Header() {
       </div>
 
       {/* Main Navbar - White */}
-      <header className="bg-white shadow-sm sticky top-0 z-50">
+      <header className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between py-4">
             {/* Logo */}
@@ -170,6 +171,7 @@ export default function Header() {
           )}
         </div>
       </header>
+      </div>
 
       {/* Resultados Modal */}
       <ResultadosModal
