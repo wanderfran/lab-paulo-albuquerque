@@ -60,7 +60,7 @@ export default function Hero() {
             <div className="absolute inset-0 flex items-center">
               <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 w-full">
                 <div className="max-w-2xl">
-                  <h1 className="text-6xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight">
+                  <h1 className="text-[42px] sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight">
                     {banner.title}
                   </h1>
                   <p className="text-base sm:text-lg md:text-xl text-white/80 mb-6 sm:mb-8 leading-relaxed">
