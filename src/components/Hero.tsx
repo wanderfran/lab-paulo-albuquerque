@@ -39,7 +39,7 @@ export default function Hero() {
   return (
     <section className="relative">
       {/* Banner Slider */}
-      <div className="relative aspect-[2/3] md:aspect-auto md:h-[85vh] md:min-h-[600px] overflow-hidden">
+      <div className="relative aspect-[5/4] md:aspect-auto md:h-[85vh] md:min-h-[600px] overflow-hidden">
         {banners.map((banner, index) => (
           <div
             key={index}
