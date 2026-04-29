@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { asset } from '@/lib/path';
 
 const quickLinks = [
   { label: "Início", href: "/" },
@@ -32,7 +33,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <div className="mb-6">
               <img
-                src="/logo-white.png"
+                src={asset("/logo-white.png")}
                 alt="Laboratório Médico Dr. Paulo J. Albuquerque"
                 className="h-16 w-auto"
               />

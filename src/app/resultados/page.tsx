@@ -2,6 +2,7 @@
 
 import { useState, FormEvent } from 'react';
 import Link from 'next/link';
+import { asset } from '@/lib/path';
 
 export default function ResultadosPage() {
   const [protocolo, setProtocolo] = useState('');
@@ -29,7 +30,7 @@ export default function ResultadosPage() {
           <div className="flex items-center justify-between py-4">
             <Link href="/" className="flex items-center">
               <img
-                src="/logo.png"
+                src={asset("/logo.png")}
                 alt="Laboratório Dr. Paulo J. Albuquerque"
                 className="h-12 md:h-14 w-auto"
               />

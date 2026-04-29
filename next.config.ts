@@ -2,13 +2,17 @@ import type { NextConfig } from "next";
 
 const isProd = process.env.NODE_ENV === "production";
 const repoName = "lab-paulo-albuquerque";
+const basePath = isProd ? `/${repoName}` : "";
 
 const nextConfig: NextConfig = {
   output: "export",
   trailingSlash: true,
   images: { unoptimized: true },
-  basePath: isProd ? `/${repoName}` : "",
+  basePath,
   assetPrefix: isProd ? `/${repoName}/` : "",
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
+  },
 };
 
 export default nextConfig;

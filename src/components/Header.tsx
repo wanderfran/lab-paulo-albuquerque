@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import ResultadosModal from './ResultadosModal';
 import AgendamentoModal from './AgendamentoModal';
+import { asset } from '@/lib/path';
 
 const menuItems = [
   { label: 'Início', href: '/', active: true },
@@ -70,7 +71,7 @@ export default function Header() {
             {/* Logo */}
             <Link href="/" className="flex items-center">
               <img
-                src="/logo.png"
+                src={asset("/logo.png")}
                 alt="Laboratório Médico Dr. Paulo J. Albuquerque"
                 className="h-14 md:h-16 w-auto"
               />

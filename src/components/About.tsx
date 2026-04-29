@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { asset } from '@/lib/path';
 
 const galleryImages = [
   { src: '/gallery/lab-1.jpeg', alt: 'Fachada do Laboratório' },
@@ -29,7 +30,7 @@ export default function About() {
           {galleryImages.map((image, index) => (
             <img
               key={index}
-              src={image.src}
+              src={asset(image.src)}
               alt={image.alt}
               className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${
                 index === currentSlide ? 'opacity-100' : 'opacity-0'

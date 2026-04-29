@@ -2,6 +2,7 @@
 
 import { useState, FormEvent } from 'react';
 import Link from 'next/link';
+import { asset } from '@/lib/path';
 
 export default function TrabalheConoscoPage() {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -37,7 +38,7 @@ export default function TrabalheConoscoPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center gap-3">
-              <img src="/logo.png" alt="Lab Dr. Paulo Albuquerque" className="h-12" />
+              <img src={asset("/logo.png")} alt="Lab Dr. Paulo Albuquerque" className="h-12" />
             </Link>
             <Link
               href="/"
