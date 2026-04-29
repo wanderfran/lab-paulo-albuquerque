@@ -208,7 +208,7 @@ export default function Services() {
         {/* Header */}
         <div className="text-center max-w-4xl mx-auto mb-12">
           <p className="text-blue-400 font-semibold mb-4 text-lg">Mais de 500 Tipos de Exames Disponíveis</p>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
             Exames Laboratoriais Completos
             <br />
             <span className="text-blue-400">Para Toda a Família</span>
