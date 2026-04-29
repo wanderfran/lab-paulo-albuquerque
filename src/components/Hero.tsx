@@ -39,7 +39,7 @@ export default function Hero() {
   return (
     <section className="relative">
       {/* Banner Slider */}
-      <div className="relative aspect-square md:aspect-auto md:h-[85vh] md:min-h-[600px] overflow-hidden">
+      <div className="relative aspect-[2/3] md:aspect-auto md:h-[85vh] md:min-h-[600px] overflow-hidden">
         {banners.map((banner, index) => (
           <div
             key={index}
@@ -53,36 +53,36 @@ export default function Hero() {
               alt={banner.title}
               className="w-full h-full object-cover"
             />
-            {/* Dark Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-r from-navy-900/90 via-navy-900/70 to-navy-900/40" />
+            {/* Dark Overlay - desktop only */}
+            <div className="hidden md:block absolute inset-0 bg-gradient-to-r from-navy-900/90 via-navy-900/70 to-navy-900/40" />
 
-            {/* Content */}
-            <div className="absolute inset-0 flex items-center">
+            {/* Desktop Content (over image) */}
+            <div className="hidden md:flex absolute inset-0 items-center">
               <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 w-full">
                 <div className="max-w-2xl">
-                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight">
+                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
                     {banner.title}
                   </h1>
-                  <p className="text-base sm:text-lg md:text-xl text-white/80 mb-6 sm:mb-8 leading-relaxed">
+                  <p className="text-lg md:text-xl text-white/80 mb-8 leading-relaxed">
                     {banner.subtitle}
                   </p>
 
                   {/* CTA Buttons */}
-                  <div className="flex flex-wrap gap-2 sm:gap-4">
+                  <div className="flex flex-wrap gap-4">
                     <a
                       href="https://wa.me/5596981055224"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex flex-1 sm:flex-initial items-center justify-center gap-1.5 sm:gap-2 bg-white text-navy-900 px-3 sm:px-6 py-3 sm:py-4 rounded-lg text-sm sm:text-base font-semibold hover:bg-gray-100 transition-all group whitespace-nowrap"
+                      className="inline-flex items-center justify-center gap-2 bg-white text-navy-900 px-6 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all group whitespace-nowrap"
                     >
-                      <svg className="w-4 h-4 sm:w-5 sm:h-5 text-blue-500 group-hover:translate-x-1 transition-transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-5 h-5 text-blue-500 group-hover:translate-x-1 transition-transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                       </svg>
-                      Agendar<span className="hidden sm:inline"> Coleta Domiciliar</span>
+                      Agendar Coleta Domiciliar
                     </a>
                     <a
                       href="#servicos"
-                      className="inline-flex flex-1 sm:flex-initial items-center justify-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-3 sm:px-6 py-3 sm:py-4 rounded-lg text-sm sm:text-base font-semibold transition-all whitespace-nowrap"
+                      className="inline-flex items-center justify-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-6 py-4 rounded-lg font-semibold transition-all whitespace-nowrap"
                     >
                       Exames e Serviços
                     </a>
@@ -115,7 +115,7 @@ export default function Hero() {
         </button>
 
         {/* Slider Navigation Dots */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3 z-20">
+        <div className="absolute bottom-4 md:bottom-8 left-1/2 -translate-x-1/2 flex gap-3 z-20">
           {banners.map((_, index) => (
             <button
               key={index}
@@ -129,6 +129,44 @@ export default function Hero() {
             />
           ))}
         </div>
+      </div>
+
+      {/* Mobile Content (below image) */}
+      <div className="md:hidden bg-navy-900 text-white px-5 py-8">
+        {banners.map((banner, index) => (
+          <div
+            key={index}
+            className={`transition-opacity duration-500 ${
+              index === currentSlide ? 'block opacity-100' : 'hidden opacity-0'
+            }`}
+          >
+            <h1 className="text-3xl font-bold mb-4 leading-tight">
+              {banner.title}
+            </h1>
+            <p className="text-base text-white/80 mb-6 leading-relaxed">
+              {banner.subtitle}
+            </p>
+            <div className="flex flex-wrap gap-2">
+              <a
+                href="https://wa.me/5596981055224"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex flex-1 items-center justify-center gap-1.5 bg-white text-navy-900 px-3 py-3 rounded-lg text-sm font-semibold hover:bg-gray-100 transition-all whitespace-nowrap"
+              >
+                <svg className="w-4 h-4 text-blue-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                </svg>
+                Agendar
+              </a>
+              <a
+                href="#servicos"
+                className="inline-flex flex-1 items-center justify-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-3 py-3 rounded-lg text-sm font-semibold transition-all whitespace-nowrap"
+              >
+                Exames e Serviços
+              </a>
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );
