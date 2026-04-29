@@ -1,26 +1,114 @@
 @import "tailwindcss";
+@import "lenis/dist/lenis.css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Cabinet Grotesk Variable Font */
+@font-face {
+  font-family: 'Cabinet Grotesk';
+  src: url('/fonts/CabinetGrotesk-Variable.ttf') format('truetype');
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Navy Blue - Primary dark */
+  --color-navy-50: #f0f5fa;
+  --color-navy-100: #dae5f2;
+  --color-navy-200: #b8cce6;
+  --color-navy-300: #8badd4;
+  --color-navy-400: #5a8ac0;
+  --color-navy-500: #3d6ea8;
+  --color-navy-600: #2d5a8f;
+  --color-navy-700: #264a75;
+  --color-navy-800: #1e3d5f;
+  --color-navy-900: #1b3a5f;
+  --color-navy-950: #0f2340;
+
+  /* Blue - Accent color */
+  --color-blue-50: #f0f7fb;
+  --color-blue-100: #e0eff7;
+  --color-blue-200: #b8ddef;
+  --color-blue-300: #8ac8e4;
+  --color-blue-400: #5aaed5;
+  --color-blue-500: #4a90b8;
+  --color-blue-600: #3a7a9f;
+  --color-blue-700: #306482;
+  --color-blue-800: #2a5269;
+  --color-blue-900: #264556;
+
+  /* Fontes */
+  --font-sans: 'Cabinet Grotesk', system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: #1b3a5f;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Animações */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(74, 144, 184, 0.4); }
+  50% { box-shadow: 0 0 20px 10px rgba(74, 144, 184, 0.2); }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1b3a5f;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0f2340;
+}
+
+/* Hide scrollbar utility */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
