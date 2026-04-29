@@ -37,7 +37,7 @@ export default function LeadForm() {
     <section id="contato" className="relative">
       <div className="grid lg:grid-cols-2">
         {/* Form Side - Navy Background */}
-        <div className="bg-navy-900 py-20 px-4 sm:px-8 lg:px-16">
+        <div className="bg-navy-900 py-20 px-5 sm:px-8 lg:px-16">
           <div className="max-w-lg mx-auto lg:ml-auto lg:mr-0">
             <p className="text-blue-400 font-semibold mb-4">Sua Saúde e Segurança São Importantes Para Nós</p>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">

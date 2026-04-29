@@ -24,7 +24,7 @@ export default function Header() {
     <>
       {/* Top Bar - Navy */}
       <div className="bg-navy-900 text-white text-xs sm:text-sm">
-        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
           <div className="flex flex-wrap items-center justify-center md:justify-between gap-y-1 py-2 sm:py-2.5">
             {/* Left Info — sempre visível */}
             <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 sm:gap-x-6">
@@ -66,7 +66,7 @@ export default function Header() {
 
       {/* Main Navbar - White */}
       <header className="bg-white shadow-sm sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between py-4">
             {/* Logo */}
             <Link href="/" className="flex items-center">

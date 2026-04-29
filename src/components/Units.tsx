@@ -55,7 +55,7 @@ const units = [
 export default function Units() {
   return (
     <section id="unidades" className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <p className="text-blue-500 font-semibold mb-4">Ajudando a Entregar Respostas Para Questões de Saúde!</p>

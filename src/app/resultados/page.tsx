@@ -26,7 +26,7 @@ export default function ResultadosPage() {
     <div className="min-h-screen bg-gray-50">
       {/* Header Simples */}
       <header className="bg-white shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between py-4">
             <Link href="/" className="flex items-center">
               <img
@@ -50,7 +50,7 @@ export default function ResultadosPage() {
 
       {/* Main Content */}
       <main className="py-16">
-        <div className="max-w-xl mx-auto px-4">
+        <div className="max-w-xl mx-auto px-5">
           {/* Card Principal */}
           <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
             {/* Header do Card */}

@@ -14,7 +14,7 @@ const convenios = [
 export default function Convenios() {
   return (
     <section id="convenios" className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <p className="text-blue-500 font-semibold mb-4">Aceitamos os Principais Convênios</p>

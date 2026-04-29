@@ -35,7 +35,7 @@ export default function TrabalheConoscoPage() {
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
       <header className="bg-navy-900 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center gap-3">
               <img src={asset("/logo.png")} alt="Lab Dr. Paulo Albuquerque" className="h-12" />
@@ -55,7 +55,7 @@ export default function TrabalheConoscoPage() {
 
       {/* Hero */}
       <div className="bg-navy-900 text-white pb-20 pt-8">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 text-center">
           <p className="text-blue-400 font-semibold mb-2">Faça parte da nossa equipe</p>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Trabalhe Conosco</h1>
           <p className="text-white/70 max-w-2xl mx-auto">
@@ -65,7 +65,7 @@ export default function TrabalheConoscoPage() {
         </div>
       </div>
 
-      <main className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 -mt-12 pb-16">
+      <main className="max-w-5xl mx-auto px-5 sm:px-6 lg:px-8 -mt-12 pb-16">
         <div className="grid lg:grid-cols-5 gap-8">
           {/* Benefits */}
           <div className="lg:col-span-2 space-y-6">

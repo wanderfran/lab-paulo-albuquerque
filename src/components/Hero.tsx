@@ -58,7 +58,7 @@ export default function Hero() {
 
             {/* Content */}
             <div className="absolute inset-0 flex items-center">
-              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+              <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 w-full">
                 <div className="max-w-2xl">
                   <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight">
                     {banner.title}
@@ -106,7 +106,7 @@ export default function Hero() {
         </button>
         <button
           onClick={nextSlide}
-          className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/10 backdrop-blur-sm hover:bg-white/20 rounded-full flex items-center justify-center text-white transition-all z-20 border border-white/20"
+          className="hidden md:flex absolute right-4 md:right-8 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/10 backdrop-blur-sm hover:bg-white/20 rounded-full items-center justify-center text-white transition-all z-20 border border-white/20"
           aria-label="Próximo banner"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

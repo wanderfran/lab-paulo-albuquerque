@@ -39,7 +39,7 @@ export default function Process() {
         <div className="absolute top-1/2 left-1/4 w-16 h-16 border-2 border-white rounded-full" />
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 relative">
         {/* Header */}
         <div className="flex flex-wrap items-center justify-center gap-6 mb-12 text-white">
           <div className="flex items-center gap-2">

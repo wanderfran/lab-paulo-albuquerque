@@ -26,7 +26,7 @@ export default function BlogPage() {
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
       <header className="bg-navy-900 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center gap-3">
               <img src={asset("/logo.png")} alt="Lab Dr. Paulo Albuquerque" className="h-12" />
@@ -46,7 +46,7 @@ export default function BlogPage() {
 
       {/* Hero */}
       <div className="bg-navy-900 text-white pb-16 pt-8">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 text-center">
           <p className="text-blue-400 font-semibold mb-2">Fique por dentro</p>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Últimas Notícias</h1>
           <p className="text-white/70 max-w-2xl mx-auto">
@@ -56,7 +56,7 @@ export default function BlogPage() {
       </div>
 
       {/* Posts Grid */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8">
+      <main className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 -mt-8">
         {loading ? (
           <div className="text-center py-12">
             <div className="animate-spin w-8 h-8 border-4 border-blue-500 border-t-transparent rounded-full mx-auto" />
